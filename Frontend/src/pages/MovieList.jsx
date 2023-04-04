@@ -41,13 +41,13 @@ function MovieList() {
           </thead>
           <tbody>
             {listOfMovies.map((m) => (
-              <tr key={m.Title}>
-                <td>{m.Title}</td>
-                <td>{m.Year}</td>
-                <td>{m.Director}</td>
-                <td>{m.Rating}</td>
-                <td>{m.Category}</td>
-                <td>{m.Edited}</td>
+              <tr key={m.title}>
+                <td>{m.title}</td>
+                <td>{m.year}</td>
+                <td>{m.director}</td>
+                <td>{m.rating}</td>
+                <td>{m.category}</td>
+                <td>{m.edited}</td>
               </tr>
             ))}
           </tbody>

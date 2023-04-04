@@ -16,7 +16,7 @@ function MovieListNew() {
   return (
     <>
       <div className="row">
-        <h4>The Best Movies</h4>
+        <h1>Joel's Movie List</h1>
       </div>
       <table className="table table-bordered">
         <thead>
@@ -31,13 +31,13 @@ function MovieListNew() {
         </thead>
         <tbody>
           {movieData.map((m) => (
-            <tr key={m.MovieId}>
-              <td>{m.Title}</td>
-              <td>{m.Category}</td>
-              <td>{m.Year}</td>
-              <td>{m.Director}</td>
-              <td>{m.Rating}</td>
-              <td>{m.Edited}</td>
+            <tr key={m.movieId}>
+              <td>{m.title}</td>
+              <td>{m.category}</td>
+              <td>{m.year}</td>
+              <td>{m.director}</td>
+              <td>{m.rating}</td>
+              <td>{m.edited}</td>
             </tr>
           ))}
         </tbody>
